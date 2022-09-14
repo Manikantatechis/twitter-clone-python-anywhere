@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import cloudinary
+cloudinary.config(
+  cloud_name = "dp6c8yqzx",
+  api_key = "319888128225874",
+  api_secret = "x7NXaZrXN3WeRfPZWO3J08F1Nk8",
+  api_proxy= 'http://proxy.server:3128',
+)
 import cloudinary.uploader
 import cloudinary.api
 
@@ -141,11 +147,7 @@ STATICFILES_DIRS = (
 )
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-cloudinary.config(
-  cloud_name = "dp6c8yqzx",
-  api_key = "319888128225874",
-  api_secret = "x7NXaZrXN3WeRfPZWO3J08F1Nk8",
-)
+
 
 
 
