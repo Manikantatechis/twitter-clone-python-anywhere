@@ -36,6 +36,7 @@ SECRET_KEY = 'django-insecure-7p1%%0%k#&f8j-d!4$%pc2cx^czsmh-v!wr0u=81=k_u8qzg!)
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+X_FRAME_OPTIONS='*'
 
 
 # Application definition
@@ -147,7 +148,6 @@ STATICFILES_DIRS = (
 )
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
 
 
 
